@@ -5,15 +5,9 @@
 
 /* TODO: After modifying the original version, uncomment the following
  * line to set OPT properly */
-<<<<<<< HEAD
 #define OPT 1
 typedef struct __PHONE_BOOK_DETAIL {
-    //    char lastName[MAX_LAST_NAME_SIZE];
-=======
-// #define OPT 1
-typedef struct __PHONE_BOOK_ENTRY {
     char lastName[MAX_LAST_NAME_SIZE];
->>>>>>> 6c62ba461d671e1d2c6a0eb9b6a6e1466fad68ed
     char firstName[16];
     char email[16];
     char phone[10];
@@ -23,7 +17,6 @@ typedef struct __PHONE_BOOK_ENTRY {
     char city[16];
     char state[2];
     char zip[5];
-<<<<<<< HEAD
     //    struct __PHONE_BOOK_ENTRY *pNext;
 } detail;
 
@@ -40,11 +33,8 @@ typedef struct __PHONE_BOOK_ENTRY {
         char state[2];
         char zip[5];
         */
-    struct __PHONE_BOOK_ENTRY *pNext;
     struct __PHONE_BOOK_DETAIL *pDetail;
-=======
     struct __PHONE_BOOK_ENTRY *pNext;
->>>>>>> 6c62ba461d671e1d2c6a0eb9b6a6e1466fad68ed
 } entry;
 
 entry *findName(char lastName[], entry *pHead);
